@@ -10,6 +10,7 @@ import { PostsComponent } from './components/posts/posts.component';
 import { AlbumsComponent } from './components/albums/albums.component';
 import { TodosComponent } from './components/todos/todos.component';
 import { AlbumsService, PostsService, TodosService } from './services/api.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AlbumsService, PostsService, TodosService } from './services/api.servic
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [HttpClient, PostsService, AlbumsService, TodosService],
   bootstrap: [AppComponent]
