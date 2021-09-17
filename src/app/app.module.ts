@@ -12,6 +12,7 @@ import { TodosComponent } from './components/todos/todos.component';
 import { AlbumsService, PostsService, TodosService } from './services/api.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [HttpClient, PostsService, AlbumsService, TodosService],
   bootstrap: [AppComponent]
