@@ -96,9 +96,28 @@ header {
       background-color: #e23237;
       color: #fff;
     } 
-  }
-  
+  } 
 }
+app-home {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  align-items: flex-end;
+  z-index: -1;
+  @media (max-width: 768px){
+    align-items: center;
+  }
+  .home {
+    display: block;
+    margin: 0 auto;
+    max-width: 900px;
+    height: fit-content;
+    @media (max-width: 768px){
+      width: 100%;
+    }
+  }
+}
+
 
 app-posts, app-albums, app-todos {
   display: block;

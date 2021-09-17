@@ -13,6 +13,7 @@ import { AlbumsService, PostsService, TodosService } from './services/api.servic
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import {MatButtonModule} from '@angular/material/button';
     PostsComponent,
     AlbumsComponent,
     TodosComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
