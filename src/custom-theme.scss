@@ -57,3 +57,64 @@ $appAngular8-theme: mat-light-theme($appAngular8-primary, $appAngular8-accent, $
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+header { 
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    p {
+        background-color: #eee;
+        padding: 1em;
+        margin: 0;
+    }
+    .logo {
+        margin: auto;
+        margin-top: -40px;
+        display:block;
+        position: relative;
+    }
+}
+
+app-posts, app-albums, app-todos {
+  display: block;
+  width: 1200px;
+  margin: auto;
+  margin-top: 165px;
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    .mat-card {
+      z-index: -1;
+    } 
+  }
+}
+
+app-todos {
+  .mat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+footer { 
+    background-color: #eeeeee;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    position: fixed;
+    bottom: 0;
+    a {
+        color: #000;
+        font-weight: 600;
+    }
+}

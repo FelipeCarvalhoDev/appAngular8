@@ -1,6 +1,7 @@
 <h2>Lista de to-do</h2>
-
-<div *ngFor="let todo of todos">
+<div class="grid">
+  <mat-card *ngFor="let todo of todos">
     <h3>{{ todo.id }} - {{ todo.title }}</h3>
     <p>{{ todo.completed ? "Feito" : "Pendente"}}</p>
+  </mat-card>
 </div>

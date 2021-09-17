@@ -1,4 +1,6 @@
 <h2>Lista de albums</h2>
-<div *ngFor="let album of albums">
+<div class="grid">
+  <mat-card *ngFor="let album of albums">
     <h3>{{ album.id }} - {{ album.title }}</h3>
+  </mat-card>
 </div>
